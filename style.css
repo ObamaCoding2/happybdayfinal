@@ -1,0 +1,127 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #ffe5e5;
+
+    user-select: none;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+  canvas {
+    border: 0.1px solid grey;
+  }
+  a {
+    color: rgb(161, 157, 157);
+  }
+  .separator {
+    color: grey;
+  }
+
+  #volume{
+    position:fixed;
+    left:50px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+    opacity:1;
+    transition: visibility 0s, opacity 0.5s ease; 
+    
+    user-select: none;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+#slider{
+    position:fixed;
+    left:92px;
+    width:100px;
+    height:100px;
+    bottom:0px;
+    visibility: hidden;
+    opacity: 0;
+    cursor:pointer;
+pointer-events: none; 
+transition: opacity 1s ease;
+
+}
+#volume:hover{
+    opacity:1;
+}
+#volume:hover + #slider,
+#slider:hover {
+  opacity: 1;
+    visibility:visible;
+  pointer-events: auto; 
+  transition: opacity 1s ease;
+} 
+#game{
+    width: 1200px;
+    height:300px;
+    border: 1px solid pink;
+    margin:auto;
+}
+
+#cats {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#catlerContainer{
+    top:100px;
+    left:160px;
+    width: 200px;
+    height:200px;
+    position:fixed;
+}
+button {
+    flex-direction:row;
+    font-size: 1.5em;
+    border: .0625em solid #FFC0CB;
+    transition: 0.2s;
+    background: #ffe5e5;
+    color: #FF91A4;
+    cursor: pointer;
+    width: 30px;
+
+}
+
+button:hover,
+button:focus {
+    background: #FFC0CB;
+    color: #fff;
+}
+
+#catler2{
+    cursor:pointer;
+    top:50px;
+    left:160px;
+    width: 50px;
+    height:50px;
+    position:fixed;
+    animation-play-state: paused;
+}
+#catCounter{
+    top:50px;
+    left:220px;
+    width: 50px;
+    height:50px;
+    position:fixed;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Game</title>
+    <script src="index.js" defer type="module"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<img src="notog.gif" alt="wolf" width=400px height=250px class="center">
+    <div id="cats"></div>
+<div id="catCounter">0</div>
+<div id="catlerContainer">
+    <!-- Minus button -->
+    <button onclick="updateCats(false)">-</button>
+
+    <!-- Image element -->
+    <img id="catler2" onclick="hideCats()" src="jinx.png">
+
+    <!-- Plus button -->
+    <button onclick="updateCats(true)">+</button>
+</div>
+    <input type="image"  id="volume" onclick="bday()" src="paused.png" />
+    <input type="range" class="bruh" min="1" max="100" value="1" id='slider' >
+    <canvas id="game"></canvas>
+  </body>
+</html>
